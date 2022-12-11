@@ -20,7 +20,7 @@ export class ApiService {
 
   getEmp=(data:any)=>
   {
-    return this.http.post("http://localhost:8080/getEmp",data)
+    return this.http.get("http://localhost:8080/getEmp",data)
   }
 
   searchEmp=(data:any)=>
@@ -34,7 +34,7 @@ export class ApiService {
   }
   ViewTask=(data:any)=>
   {
-    return this.http.post("http://localhost:8080/viewTask",data)
+    return this.http.get("http://localhost:8080/viewTask",data)
   }
   
 }
