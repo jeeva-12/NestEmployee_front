@@ -14,7 +14,32 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { ViewEmpComponent } from './view-emp/view-emp.component';
 import { ViewTaskComponent } from './view-task/view-task.component';
 
-const myRoute:Routes=[]
+const myRoute:Routes=[
+  {
+    path:"",
+    component:AdminLoginComponent
+  },
+  {
+    path:"userLogin",
+    component:UserLoginComponent
+  },
+  {
+    path:"addEmp",
+    component:AddEmpComponent
+  },
+  {
+    path:"addTask",
+    component:AddTaskComponent
+  },
+  {
+    path:"viewEmp",
+    component:ViewEmpComponent
+  },
+  {
+    path:"viewTask",
+    component:ViewTaskComponent
+  },
+]
 @NgModule({
   declarations: [
     AppComponent,
